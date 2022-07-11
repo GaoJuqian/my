@@ -6,6 +6,8 @@ export default defineConfig({
     plugins: [vue2({}), vueJsx({ compositionAPI: true })],
     resolve: {
         // 路径引用别名
-        alias: {},
+        alias: {
+            "@": "/src",
+        },
     },
 });
