@@ -1,27 +1,24 @@
 import { defineComponent, toRefs, reactive } from "vue";
+import { useCounterStore } from "@/piniaStore/counter";
+import HelloWorld from "@/components/HelloWorld";
 
 export default defineComponent({
     name: "Home",
-    props: {
-        title: {
-            type: [String, Number],
-            default: "",
-        },
-    },
     setup(props, context) {
-        const state = reactive({
-            count: 1,
-        });
+        const { increment } = useCounterStore();
+
+        const state = reactive({});
         return {
             ...toRefs(state),
+            increment,
         };
     },
     render() {
         const { count } = this;
         return (
             <div>
-                {count}
-                <button onClick={(e) => this.count++}>点击</button>
+                <button onClick={(e) => this.increment()}>点击</button>
+                <HelloWorld></HelloWorld>
             </div>
         );
     },
