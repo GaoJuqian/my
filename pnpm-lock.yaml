@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vitejs/plugin-vue2': ^1.1.2
   '@vitejs/plugin-vue2-jsx': ^1.0.0
+  '@webgpu/types': ^0.1.21
   pinia: ^2.0.14
   pnpm: ^7.5.0
   prettier: ^2.7.1
@@ -14,6 +15,7 @@ specifiers:
 
 dependencies:
   '@vitejs/plugin-vue2-jsx': 1.0.0_vite@2.9.13+vue@2.7.0
+  '@webgpu/types': 0.1.21
   pinia: 2.0.14_typescript@4.7.4+vue@2.7.0
   vue: 2.7.0
   vue-router: 3.5.4
@@ -609,6 +611,10 @@ packages:
   /@vue/shared/3.2.37:
     resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==}
     dev: true
+
+  /@webgpu/types/0.1.21:
+    resolution: {integrity: sha512-pUrWq3V5PiSGFLeLxoGqReTZmiiXwY3jRkIG5sLLKjyqNxrwm/04b4nw7LSmGWJcKk59XOM/YRTUwOzo4MMlow==}
+    dev: false
 
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
