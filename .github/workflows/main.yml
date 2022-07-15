@@ -11,8 +11,8 @@ jobs:
       matrix:
         node-version: [14x]
     steps:
-      - name: Run pwd LL
-        run: pwd & ll
+      - name: Run pwd Ls
+        run: pwd & ls
 
       - name: Run a pnpm insstall
         run: pnpm install
