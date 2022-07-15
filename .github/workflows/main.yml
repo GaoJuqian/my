@@ -11,11 +11,11 @@ jobs:
       matrix:
         node-version: [14x]
     steps:
-      - name: Run pwd Ls
-        run: pwd & ls
+      - name: Run (pwd)
+        run: pwd
 
-      - name: Run a pnpm insstall
-        run: pnpm install
+      - name: Run a (npm insstall)
+        run: npm install
         
-      - name: Run a pnpm run build
-        run: pnpm run build
+      - name: Run a (npm run build)
+        run: npm run build
