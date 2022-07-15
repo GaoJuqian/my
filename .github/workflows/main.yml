@@ -12,7 +12,7 @@ jobs:
         node-version: [14x]
     steps:
       - name: Run pwd LL
-        run: pwd && ll
+        run: pwd & ll
 
       - name: Run a pnpm insstall
         run: pnpm install
