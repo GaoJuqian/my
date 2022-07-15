@@ -1,0 +1,21 @@
+name: my CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14x]
+    steps:
+      - name: Run pwd LL
+        run: pwd && ll
+
+      - name: Run a pnpm insstall
+        run: pnpm install
+        
+      - name: Run a pnpm run build
+        run: pnpm run build
