@@ -207,6 +207,10 @@ fieldset {
     width: 1px;
 }
 
+html.dark {
+    color-scheme: dark;
+}
+
 /* :root {
     --accent-color: #6394bf
     color-scheme: light dark;
