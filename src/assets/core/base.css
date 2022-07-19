@@ -208,7 +208,7 @@ fieldset {
 }
 
 html.dark {
-    color-scheme: dark;
+    color-scheme: light dark;
 }
 
 /* :root {
