@@ -4,7 +4,7 @@ import vueJsx from "@vitejs/plugin-vue2-jsx";
 
 export default defineConfig({
     server: {
-        host: "0.0.0.0",
+        host: "localhost",
     },
     base: "/my/",
     plugins: [vue2({}), vueJsx({ compositionAPI: true })],
