@@ -19,8 +19,8 @@ export default defineComponent({
     render() {
         const { count, router } = this;
         return (
-            <div>
-                <div style={"font-size: 1.5rem;"}>这是一段没用的文字</div>
+            <div style={"font-size: 14px"}>
+                <div style={"font-size: 24px;"}>这是一段没用的文字</div>
                 <h1>这是一段没用的文字</h1>
                 <button onClick={() => router.push("/WebGpu")}>WebGpu</button>
                 <button onClick={(e) => this.increment()}>点击++</button>
