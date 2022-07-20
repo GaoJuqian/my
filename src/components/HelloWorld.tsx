@@ -1,5 +1,5 @@
 import { defineComponent, toRefs, reactive } from "vue";
-import { useCounterStore } from "@/piniaStore/counter";
+import { useCounterStore } from "@src/piniaStore/counter";
 import { storeToRefs } from "pinia";
 
 export default defineComponent({

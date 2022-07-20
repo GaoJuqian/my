@@ -1,7 +1,7 @@
 import { defineComponent, toRefs, reactive, onMounted } from "vue";
-import { useCounterStore } from "@/piniaStore/counter";
-import HelloWorld from "@/components/HelloWorld";
-import { useRouter } from "@/util/myHook";
+import { useCounterStore } from "@src/piniaStore/counter";
+import HelloWorld from "@src/components/HelloWorld";
+import { useRouter } from "@src/util/myHook";
 
 export default defineComponent({
     name: "Home",

@@ -1,4 +1,4 @@
-import { useCounterStore } from "@/piniaStore/counter";
+import { useCounterStore } from "@src/piniaStore/counter";
 import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it } from "vitest";
 

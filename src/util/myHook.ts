@@ -1,4 +1,4 @@
-import router from "@/router/index";
+import router from "@src/router/index";
 
 export const useRouter = () => {
     return router;

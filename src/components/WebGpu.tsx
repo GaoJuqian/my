@@ -1,7 +1,7 @@
 import { defineComponent, toRefs, reactive } from "vue";
-import { useCounterStore } from "@/piniaStore/counter";
+import { useCounterStore } from "@src/piniaStore/counter";
 import { storeToRefs } from "pinia";
-import { isWebGpuOk } from "@/util/webGpuHelper";
+import { isWebGpuOk } from "@src/util/webGpuHelper";
 
 export default defineComponent({
     name: "WebGpu",

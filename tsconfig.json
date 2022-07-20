@@ -12,9 +12,9 @@
         "esModuleInterop": true,
         "lib": ["esnext", "dom"],
         "skipLibCheck": true,
-        // "baseUrl": ".",
+        "baseUrl": ".",
         "paths": {
-            "@/*": ["./src/*"]
+            "@src/*": ["./src/*"]
         },
         "typeRoots": ["./node_modules/@webgpu/types", "./node_modules/@types"]
     },
