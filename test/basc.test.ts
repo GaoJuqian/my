@@ -2,11 +2,11 @@ import { useCounterStore } from "@src/piniaStore/counter";
 import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it } from "vitest";
 
-describe("1.测试-测试", () => {
-    beforeEach(() => {
-        setActivePinia(createPinia());
-    });
+beforeEach(() => {
+    setActivePinia(createPinia());
+});
 
+describe("1.测试-测试", () => {
     it("should works", () => {
         const counter = useCounterStore();
         expect(counter.count).toBe(0);
