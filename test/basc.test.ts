@@ -9,8 +9,8 @@ describe("1.测试-测试", () => {
 
     it("should works", () => {
         const counter = useCounterStore();
-        // console.log(counter.count);
-
         expect(counter.count).toBe(0);
+        counter.increment();
+        expect(counter.count).toEqual(1);
     });
 });
