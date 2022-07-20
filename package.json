@@ -4,6 +4,7 @@
     "version": "0.0.0",
     "scripts": {
         "dev": "vite",
+        "test-base": "vitest base",
         "test": "vitest",
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview"
