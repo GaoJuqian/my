@@ -1,7 +1,16 @@
-import { describe, expect, it } from "vitest";
+import { useCounterStore } from "@/piniaStore/counter";
+import { createPinia, setActivePinia } from "pinia";
+import { beforeEach, describe, expect, it } from "vitest";
 
 describe("1.测试-测试", () => {
+    beforeEach(() => {
+        setActivePinia(createPinia());
+    });
+
     it("should works", () => {
-        expect(1 + 1).toEqual(2);
+        const counter = useCounterStore();
+        // console.log(counter.count);
+
+        expect(counter.count).toBe(0);
     });
 });
