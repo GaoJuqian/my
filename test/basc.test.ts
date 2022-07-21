@@ -11,6 +11,6 @@ describe("1.测试-测试", () => {
         const counter = useCounterStore();
         expect(counter.count).toBe(0);
         counter.increment();
-        expect(counter.count).toEqual(1);
+        expect(counter.count).toEqual(2);
     });
 });
