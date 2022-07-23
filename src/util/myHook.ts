@@ -1,8 +1,8 @@
 import router from "@src/router/index";
 
-export const useRouter = () => {
+export function useRouter() {
     return router;
-};
-export const useRoute = () => {
+}
+export function useRoute() {
     return router.currentRoute;
-};
+}
