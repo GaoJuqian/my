@@ -8,7 +8,7 @@ Vue.use(PiniaVuePlugin);
 const pinia = createPinia();
 
 Vue.config.productionTip = false;
-Vue.config.errorHandler = function (err, vm, info) {};
+// Vue.config.errorHandler = function (err, vm, info) {};
 
 new Vue({
     router,
