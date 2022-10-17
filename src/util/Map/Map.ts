@@ -3,6 +3,8 @@ import * as ol_control from "ol/control";
 import * as ol_coordinate from "ol/coordinate";
 import * as ol_layer from "ol/layer";
 import * as ol_source from "ol/source";
+
+import * as ol_interaction from "ol/interaction";
 import * as ol_proj from "ol/proj";
 
 import * as ol_geom from "ol/geom";
@@ -68,6 +70,21 @@ export default class MapUtil {
             controls,
             view: this.view,
         });
+
+        const draw = new ol_interaction.Draw({
+            type: "Polygon",
+            geometryName: "123",
+            source: this.movePointVectorLayer.getSource()!,
+        });
+        draw.on("drawend", (e) => {
+            console.log(e.feature.getGeometry(), this.movePointVectorLayer.getSource());
+        });
+        this.baseMap.addInteraction(draw);
+        this.baseMap.addInteraction(
+            new ol_interaction.Snap({
+                source: this.movePointVectorLayer.getSource()!,
+            }),
+        );
     }
 
     addMovePoint({ icon }: { icon: any }) {
