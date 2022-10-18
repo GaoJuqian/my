@@ -4,7 +4,7 @@ import { useRouter } from "@src/util/myHook";
 import MapUtil from "@src/util/Map/Map";
 import style from "./map.module.scss";
 
-import icon from "@src/assets/logo.png";
+import icon from "@src/assets/map-pin-user-line.svg";
 import svg from "@src/assets/airfield.svg";
 
 export default defineComponent({
@@ -20,7 +20,7 @@ export default defineComponent({
 
         onMounted(() => {
             const map = new MapUtil(opt);
-            map.addMovePoint({icon:svg})
+            map.addMovePoint({icon:icon})
         });
 
         return {

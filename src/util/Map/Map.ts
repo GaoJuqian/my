@@ -49,19 +49,25 @@ export default class MapUtil {
                 new ol_control.MousePosition({
                     coordinateFormat: ol_coordinate.createStringXY(4),
                 }),
-            ]);
+            ])
+            .extend([new ol_control.ZoomSlider()]);
 
         this.view = new ol.View({
-            center: [0, 0],
-            zoom: 0,
+            center: ol_proj.fromLonLat([114.51517, 38.08402]),
+            zoom: 13,
         });
 
         this.baseLayer = new ol_layer.Tile({
-            source: new ol_source.OSM(),
+            // source: new ol_source.OSM(),
+            source: new ol_source.XYZ({
+                url: "https://api.maptiler.com/tiles/satellite/{z}/{x}/{y}.jpg?key=get_your_own_D6rA4zTHduk6KOKTXzGB",
+            }),
         });
 
         this.movePointVectorLayer = new ol_layer.Vector({
-            source: new ol_source.Vector(),
+            source: new ol_source.Vector({
+                features: [],
+            }),
         });
 
         this.baseMap = new ol.Map({
@@ -77,7 +83,7 @@ export default class MapUtil {
             source: this.movePointVectorLayer.getSource()!,
         });
         draw.on("drawend", (e) => {
-            console.log(e.feature.getGeometry(), this.movePointVectorLayer.getSource());
+            console.log(e.feature.getGeometry());
         });
         this.baseMap.addInteraction(draw);
         this.baseMap.addInteraction(
@@ -89,7 +95,7 @@ export default class MapUtil {
 
     addMovePoint({ icon }: { icon: any }) {
         const mpvl_source = this.movePointVectorLayer.getSource();
-        const geom = new ol_geom.Point([1, 1]);
+        const geom = new ol_geom.Point(ol_proj.fromLonLat([114.51517, 38.08402]));
         const mpvl_f = new ol.Feature(geom);
 
         function createStyle(src?: string, img?: any) {
