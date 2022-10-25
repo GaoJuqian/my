@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.0.6
+  '@types/three': ^0.144.0
   '@vitejs/plugin-vue2': ^1.1.2
   '@vitejs/plugin-vue2-jsx': ^1.0.2
   '@webgpu/types': ^0.1.21
@@ -10,6 +11,7 @@ specifiers:
   pnpm: ^7.5.2
   prettier: ^2.7.1
   sass: ^1.55.0
+  three: ^0.144.0
   typescript: ^4.7.4
   vite: ^2.9.14
   vitest: ^0.18.1
@@ -19,10 +21,12 @@ specifiers:
 
 dependencies:
   '@types/node': 18.0.6
+  '@types/three': 0.144.0
   '@vitejs/plugin-vue2-jsx': 1.0.2_vite@2.9.14+vue@2.7.7
   '@webgpu/types': 0.1.21
   ol: 7.1.0
   pinia: 2.0.16_typescript@4.7.4+vue@2.7.7
+  three: 0.144.0
   vue: 2.7.7
   vue-router: 3.5.4_vue@2.7.7
 
@@ -419,6 +423,16 @@ packages:
 
   /@types/node/18.0.6:
     resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
+
+  /@types/three/0.144.0:
+    resolution: {integrity: sha512-psvEs6q5rLN50jUYZ3D4pZMfxTbdt3A243blt0my7/NcL6chaCZpHe2csbCtx0SOD9fI/XnF3wnVUAYZGqCSYg==}
+    dependencies:
+      '@types/webxr': 0.5.0
+    dev: false
+
+  /@types/webxr/0.5.0:
+    resolution: {integrity: sha512-IUMDPSXnYIbEO2IereEFcgcqfDREOgmbGqtrMpVPpACTU6pltYLwHgVkrnYv0XhWEcjio9sYEfIEzgn3c7nDqA==}
+    dev: false
 
   /@vitejs/plugin-vue2-jsx/1.0.2_vite@2.9.14+vue@2.7.7:
     resolution: {integrity: sha512-XcjKPz4/CsFDzrDI+wWQqNuu9h+5UhXVTg/NF2lvlXXJQNp93UdYZs3wVEX6PQgo2wGhdx66tuuYf7rwzS8DpQ==}
@@ -1353,6 +1367,10 @@ packages:
 
   /svg-tags/1.0.0:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
+    dev: false
+
+  /three/0.144.0:
+    resolution: {integrity: sha512-R8AXPuqfjfRJKkYoTQcTK7A6i3AdO9++2n8ubya/GTU+fEHhYKu1ZooRSCPkx69jbnzT7dD/xEo6eROQTt2lJw==}
     dev: false
 
   /tinypool/0.2.4:

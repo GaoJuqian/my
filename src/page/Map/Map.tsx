@@ -31,6 +31,8 @@ export default defineComponent({
     },
     render() {
         const { router } = this;
-        return <div id={"map"} class={style.map} ></div>;
+        return <div>
+            <div id={"map"} class={style.map} ></div>
+        </div>;
     },
 });

@@ -8,6 +8,8 @@ const router = new VueRouter({
         { name: "Home", path: "/", component: () => import("@src/page/Home/Home") },
         { name: "WebGpu", path: "/webgpu", component: () => import("@src/components/WebGpu") },
         { name: "Map", path: "/map", component: () => import("@src/page/Map/Map") },
+        { name: "Three", path: "/three", component: () => import("@src/page/Three/Three") },
+
     ],
 }) as VueRouter;
 export default router;
