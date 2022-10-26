@@ -5,7 +5,7 @@ import style from "./three.module.scss";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-import Stats from 'three/addons/libs/stats.module.js';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
 
 export default defineComponent({
     name: "Three",
