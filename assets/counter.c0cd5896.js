@@ -1,0 +1,1 @@
+import{a as e,r as s}from"./index.8378180e.js";const a=e("counter",{state:()=>({count:0}),actions:{increment(){this.count++}}});e("user",()=>{const t=s({info:{}});function r({type:n,stateValue:o}){t[n]=o}return{userState:t,setUserState:r}});export{a as u};

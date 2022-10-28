@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hu Tao - Genshin Impact
+* source:	https://sketchfab.com/3d-models/hu-tao-genshin-impact-974e67ad1f7d478c9c30f5c47a12cc52
+* author:	Mezuru (https://sketchfab.com/MeZuRu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hu Tao - Genshin Impact" (https://sketchfab.com/3d-models/hu-tao-genshin-impact-974e67ad1f7d478c9c30f5c47a12cc52) by Mezuru (https://sketchfab.com/MeZuRu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
